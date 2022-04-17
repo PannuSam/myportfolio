@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Nunito:wght@200&display=swap");
+
+body,
+#container {
+  margin: 0vw;
+  padding: 0vw;
+  max-width: 100vw !important;
+}
+
+#container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Lora", serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#navbar,
+#main,
+#footer {
+  width: 100%;
+}
+
+#navbar {
+  height: 4em;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding-top: 0.5em;
+}
+
+#navLogo {
+  padding-left: 5vw;
+}
+
+#logo img {
+  height: 2.5em;
+  width: 2.5em;
+}
+
+#navLinks {
+  padding-right: 5vw;
+}
+
+.list {
+  display: inline;
+  margin-left: 5vw;
+}
+
+.link {
+  color: rgb(85, 10, 53);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #8affe2;
+}
+
+#welcome-section {
+  background-image: url("/img/bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#layer {
+  background-color: rgba(1, 82, 55, 0.603);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#welcomeHeadline,
+#welcomeHead,
+#welcomeHeadpara,
+#welcomeHead2 {
+  background-color: transparent;
+  text-align: left;
+  padding-left: 20vh;
+}
+#welcomeHeadline {
+  color: rgb(85, 10, 53);
+  padding-top: 29vh;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#welcomeHead {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3em;
+  margin-top: 0.3em;
+}
+#welcomeHead2 {
+  color: rgba(255, 255, 255, 0.308);
+  font-size: 2.5em;
+  margin-top: 0.3em;
+}
+#welcomeHeadpara {
+  margin-top: 0.3em;
+  width: 34em;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.308);
+}
+
+.divHeadline {
+  padding: 9em 10em;
+  color: rgb(85, 10, 53);
+  font-size: 1em;
+}
+.about {
+  display: flex;
+}
+.btn-con {
+  background-color: rgb(85, 10, 53);
+  margin-right: 57em;
+  margin-top: 1em;
+  font-family: "Lora", serif;
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 10px;
+}
+.girl-img {
+  height: 10em;
+  width: 10em;
+}
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 1px;
+  row-gap: 6em;
+  @media all and (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media all and (max-width: 680px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-tile {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 6em;
+  padding: 0;
+}
+.card {
+  margin-left: 4em;
+  height: 25vw;
+  width: 25vw;
+  padding: 0;
+}
+.proj-img {
+  width: 70%;
+  height: 70%;
+  margin: 1.8vw;
+  border-radius: 50%;
+}
+
+.links {
+  padding: 2.5vw;
+  color: rgb(85, 10, 53);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: #015237;
+}
+
+#about {
+  padding-top: 10vw;
+  color: black;
+}
+
+.abt-text {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.contactImg {
+  height: 20vh;
+  background-image: url("/img/contact.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#contact {
+  background-color: white;
+  padding: 5vw;
+  font-size: 2.5vw;
+}
+
+#contact a{
+	margin: 0 2em;
+}
+.fa {
+  color: black;
+  text-decoration: none;
+}
+
+.fa:hover {
+  color: #98f8db;
+}
+
+#footer {
+  padding-left: 5vw;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  #container {
+    font-size: 4vw;
+  }
+
+  #navLogo {
+    padding-left: 8vw;
+    font-size: 3vw;
+  }
+
+  #navLinks {
+    padding-right: 8vw;
+    font-size: 3vw;
+  }
+
+  #welcome-section {
+    font-size: 3.5vw;
+  }
+
+  #welcomeParagraf {
+    font-size: 3.6vw;
+  }
+
+  .iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  .links {
+    padding: 5vw;
+  }
+
+  #about {
+    padding-top: 7vw;
+    padding-bottom: 5vw;
+  }
+
+  .abt-text {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 4vw;
+  }
+
+  #contact {
+    padding: 5vw;
+    font-size: 5vw;
+  }
+
+  .fa {
+	  margin: 3vh;
+    padding: 6vw;
+  }
+  #fa-margin{
+	  margin: 0 3em;
+  }
+  #footer {
+    padding-left: 8vw;
+  }
+}
+
+#icons-img {
+  height: 10em;
+  margin: 2em;
+}
+
+#icons-img-2 {
+  height: 12em;
+  margin: 1em;
+}
+
+#icons-img-3 {
+  height: 14em;
+  margin: 2em;
+}
+.experience {
+  color: rgb(85, 10, 53);
+  margin-top: 2em;
+}
+
+figure {
+  position: relative;
+  margin-top: 2em;
+
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+figure img {
+  width: 100%;
+  margin-bottom: -5px;
+  transition: 400ms transform ease-in-out 0ms;
+}
+figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: linear-gradient(to bottom, fade(blue, 0%) 70%, fade(green, 70%));
+}
+
+figcaption {
+  position: absolute;
+  z-index: 5;
+  top: auto;
+  right: 12px;
+  bottom: 0;
+  left: 12px;
+  height: 64px;
+  line-height: 64px;
+  font-size: 36px;
+  color: rgb(0, 102, 128);
+  text-shadow: 1px 1px 0 rgb(1, 80, 100);
+}
+figure:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+.proj-para {
+  margin-left: 2em;
+  padding: 0 2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.proj-para-link {
+  padding-top: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+#contact-head {
+  padding-top: 4em;
+  color: white;
+  text-align: center;
+}
