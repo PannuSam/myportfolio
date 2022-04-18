@@ -13,4 +13,3 @@ function scrollFunction() {
   var draw = length * scrollpercent;
   line.style.strokeDashoffset = length - draw;
 }
-

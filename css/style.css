@@ -66,7 +66,7 @@ body,
 }
 
 #welcome-section {
-  background-image: url("/img/bg.jpeg");
+  background-image: url("img/bg.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -203,7 +203,7 @@ body,
 
 .contactImg {
   height: 20vh;
-  background-image: url("/img/contact.jpg");
+  background-image: url("img/contact.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -213,8 +213,8 @@ body,
   font-size: 2.5vw;
 }
 
-#contact a{
-	margin: 0 2em;
+#contact a {
+  margin: 0 2em;
 }
 .fa {
   color: black;
@@ -279,11 +279,11 @@ body,
   }
 
   .fa {
-	  margin: 3vh;
+    margin: 3vh;
     padding: 6vw;
   }
-  #fa-margin{
-	  margin: 0 3em;
+  #fa-margin {
+    margin: 0 3em;
   }
   #footer {
     padding-left: 8vw;
