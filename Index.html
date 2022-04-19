@@ -4,14 +4,13 @@
     <title>Samanpreet Kaur</title>
 
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio" />
     <meta name="author" content="Samanpreet Kaur" />
     <meta
       name="keywords"
       content="Portfolio, About me, Experience, Projects, Contact"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -25,25 +24,28 @@
 
   <body>
     <div id="container">
-      <nav id="navbar">
+      <nav id="navbar" >
         <div id="navLogo">
           <h2 id="logo"><img src="img/logo.png" alt="S" /></h2>
         </div>
 
         <div id="navLinks">
-          <ul id="uList">
-            <li class="list"><a class="link" href="/Index.html">Home</a></li>
-            <li class="list"><a class="link" href="#about">About</a></li>
-            <li class="list">
+          <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a class="link" href="/Index.html">Home</a></li>
+            <li><a class="link" href="#about">About</a></li>
+            <li>
               <a class="link" href="#experience">Experience</a>
             </li>
-            <li class="list">
+            <li>
               <a class="link" href="#my-projects">Projects</a>
             </li>
-            <li class="list">
+            <li>
               <a class="link" href="#contact-head">Contact</a>
             </li>
-            <li class="list">
+            <li>
               <a
                 class="link"
                 href="/pdf/SamanpreetKaur_Resume_Assign1.pdf"
@@ -56,6 +58,7 @@
                 >Resume</a
               >
             </li>
+          </div>
           </ul>
         </div>
       </nav>
